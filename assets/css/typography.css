@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --font-size-sm: clamp(0.7rem, 0.09vw + 0.68rem, 0.75rem);
+  --font-size-base: clamp(0.88rem, 0.22vw + 0.83rem, 1rem);
+  --font-size-md: clamp(1.09rem, 0.42vw + 1.01rem, 1.33rem);
+  --font-size-lg: clamp(1.37rem, 0.71vw + 1.22rem, 1.78rem);
+  --font-size-xl: clamp(1.71rem, 1.15vw + 1.48rem, 2.37rem);
+  --font-size-xxl: clamp(2.14rem, 1.78vw + 1.78rem, 3.16rem);
+  --font-size-xxxl: clamp(2.67rem, 2.68vw + 2.14rem, 4.21rem);
+
+  --font-base-color: #fff;
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+}
