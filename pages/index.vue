@@ -29,7 +29,8 @@
 .section {
   display: grid;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   padding-inline: var(--space-l-xl);
   color: var(--font-base-color);
 }
