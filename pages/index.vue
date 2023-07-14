@@ -15,7 +15,9 @@
           <a href="#"  class="button-link secondary">Ontdek paketten</a>
         </div>
       </div>
-      <div class="card" ref="tiltElement"></div>
+      <div class="card-container">
+        <div class="card" ref="tiltElement"></div>
+      </div>
     </section>
   </main>
 </template>
@@ -54,7 +56,9 @@ onMounted(() => {
 }
 
 .section.hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 2rem;
 }
 
 .section.hero::before {
@@ -76,8 +80,7 @@ onMounted(() => {
 .section-content {
   max-width: 37.5rem;
   display: grid;
-  gap: 1.5rem;
-
+  gap: var(--space-s-m);
 }
 
 .hero-title, .hero-intro {
@@ -110,8 +113,15 @@ onMounted(() => {
   color: #fff;
 }
 
+.card-container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
 .card {
-  position: relative;
+  /* position: relative; */
   will-change: transform;
   width: 400px;
   height: 500px;
