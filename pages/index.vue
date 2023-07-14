@@ -15,9 +15,27 @@
           <a href="#"  class="button-link secondary">Ontdek paketten</a>
         </div>
       </div>
+      <div class="card" ref="tiltElement"></div>
     </section>
   </main>
 </template>
+
+<script setup>
+import VanillaTilt from 'vanilla-tilt';
+
+const tiltElement = ref(null);
+
+onMounted(() => {
+  VanillaTilt.init(tiltElement.value, {
+    startX: 20,
+    startY: 40, 
+    max: 25,
+    speed: 400,
+    glare: true
+    // You can add more options here
+  });
+});
+</script>
 
 <style scoped>
 .main {
@@ -35,6 +53,10 @@
   color: var(--font-base-color);
 }
 
+.section.hero {
+  display: flex;
+}
+
 .section.hero::before {
   content: "";
   position: absolute;
@@ -43,6 +65,7 @@
   background-image: url('@/assets/images/hero-pattern.png');
   background-blend-mode: luminosity;
   opacity: 0.1;
+  z-index: -1;
   mask-image: radial-gradient(
       closest-corner circle at 50% 0%, 
       #000 0%, transparent 100%
@@ -54,7 +77,7 @@
   max-width: 37.5rem;
   display: grid;
   gap: 1.5rem;
-  z-index: 1;
+
 }
 
 .hero-title, .hero-intro {
@@ -86,4 +109,29 @@
   border: 2px solid #fff;
   color: #fff;
 }
+
+.card {
+  position: relative;
+  will-change: transform;
+  width: 400px;
+  height: 500px;
+  border-radius: 1rem;
+  background-color: red;
+}
+/* 
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  border-radius: 1rem;
+  box-shadow: 0 20px 70px -10px rgba(51, 51, 51, 0.7), 0 50px 100px 0 rgba(51, 51, 51, 0.2);
+  -webkit-transform: translateZ(-50px);
+  transform: translateZ(-50px);
+  -webkit-transition: .3s;
+  transition: .3s;
+} */
 </style>
