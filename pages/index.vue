@@ -18,9 +18,10 @@
             href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
             target="_blank"
             class="button-link primary"
+            @click="trekkie"
             >Pre-order bij Bol.com!</a
           >
-          <!-- <a href="#" class="button-link secondary">Ontdek paketten</a> -->
+          <a href="#one" class="button-link secondary">Ontdek paketten</a>
         </div>
       </div>
       <div class="card-container">
@@ -28,7 +29,7 @@
       </div>
     </section>
 
-    <section class="la">
+    <section class="la" id="one">
       <ColorBox color="#F38696" />
       <div class="sub one">sub</div>
       <div class="sub two">sub</div>
@@ -55,6 +56,7 @@
 </template>
 
 <script setup>
+import va from "@vercel/analytics";
 import VanillaTilt from "vanilla-tilt";
 
 const currentColor = useCurrentColor();
@@ -76,6 +78,10 @@ useSeoMeta({
 
 const tiltElement = ref(null);
 
+function trekkie() {
+  va.track("bol");
+}
+
 onMounted(() => {
   VanillaTilt.init(tiltElement.value, {
     startX: 20,
@@ -91,7 +97,7 @@ onMounted(() => {
 .header {
   display: flex;
   justify-content: center;
-  margin-block: 2rem;
+  margin-block: var(--space-s-l);
 }
 .main {
   max-width: 65rem;
