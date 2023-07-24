@@ -1,0 +1,1550 @@
+[
+  {
+    "card": "Pineco",
+    "rarity": "Common",
+    "number": "001",
+    "price": 0.05
+  },
+  {
+    "card": "Heracross",
+    "rarity": "Uncommon",
+    "number": "002",
+    "price": 0.03
+  },
+  {
+    "card": "Shroomish",
+    "rarity": "Common",
+    "number": "003",
+    "price": 0.04
+  },
+  {
+    "card": "Breloom",
+    "rarity": "Uncommon",
+    "number": "004",
+    "price": 0.03
+  },
+  {
+    "card": "Cacnea",
+    "rarity": "Common",
+    "number": "005",
+    "price": 0.05
+  },
+  {
+    "card": "Cacturne",
+    "rarity": "Uncommon",
+    "number": "006",
+    "price": 0.03
+  },
+  {
+    "card": "Tropius",
+    "rarity": "Common",
+    "number": "007",
+    "price": 0.05
+  },
+  {
+    "card": "Scatterbug",
+    "rarity": "Common",
+    "number": "008",
+    "price": 0.02
+  },
+  {
+    "card": "Spewpa",
+    "rarity": "Common",
+    "number": "009",
+    "price": 0.03
+  },
+  {
+    "card": "Vivillon",
+    "rarity": "Uncommon",
+    "number": "010",
+    "price": 0.02
+  },
+  {
+    "card": "Skiddo",
+    "rarity": "Common",
+    "number": "011",
+    "price": 0.04
+  },
+  {
+    "card": "Gogoat",
+    "rarity": "Common",
+    "number": "012",
+    "price": 0.03
+  },
+  {
+    "card": "Sprigatito",
+    "rarity": "Common",
+    "number": "013",
+    "price": 0.04
+  },
+  {
+    "card": "Floragato",
+    "rarity": "Uncommon",
+    "number": "014",
+    "price": 0.05
+  },
+  {
+    "card": "Meowscarada",
+    "rarity": "Rare",
+    "number": "015",
+    "price": 0.12
+  },
+  {
+    "card": "Tarountula",
+    "rarity": "Common",
+    "number": "016",
+    "price": 0.05
+  },
+  {
+    "card": "Tarountula",
+    "rarity": "Common",
+    "number": "017",
+    "price": 0.03
+  },
+  {
+    "card": "Tarountula",
+    "rarity": "Common",
+    "number": "018",
+    "price": 0.07
+  },
+  {
+    "card": "Spidops ex",
+    "rarity": "Double Rare",
+    "number": "019",
+    "price": 0.71
+  },
+  {
+    "card": "Smoliv",
+    "rarity": "Common",
+    "number": "020",
+    "price": 0.04
+  },
+  {
+    "card": "Smoliv",
+    "rarity": "Common",
+    "number": "021",
+    "price": 0.05
+  },
+  {
+    "card": "Dolliv",
+    "rarity": "Common",
+    "number": "022",
+    "price": 0.06
+  },
+  {
+    "card": "Arboliva",
+    "rarity": "Rare",
+    "number": "023",
+    "price": 0.12
+  },
+  {
+    "card": "Toedscool",
+    "rarity": "Common",
+    "number": "024",
+    "price": 0.03
+  },
+  {
+    "card": "Toedscool",
+    "rarity": "Common",
+    "number": "025",
+    "price": 0.04
+  },
+  {
+    "card": "Toedscruel",
+    "rarity": "Uncommon",
+    "number": "026",
+    "price": 0.03
+  },
+  {
+    "card": "Capsakid",
+    "rarity": "Common",
+    "number": "027",
+    "price": 0.03
+  },
+  {
+    "card": "Capsakid",
+    "rarity": "Common",
+    "number": "028",
+    "price": 0.04
+  },
+  {
+    "card": "Scovillain",
+    "rarity": "Uncommon",
+    "number": "029",
+    "price": 0.04
+  },
+  {
+    "card": "Growlithe",
+    "rarity": "Common",
+    "number": "030",
+    "price": 0.03
+  },
+  {
+    "card": "Growlithe",
+    "rarity": "Common",
+    "number": "031",
+    "price": 0.07
+  },
+  {
+    "card": "Arcanine ex",
+    "rarity": "Double Rare",
+    "number": "032",
+    "price": 0.79
+  },
+  {
+    "card": "Houndour",
+    "rarity": "Common",
+    "number": "033",
+    "price": 0.02
+  },
+  {
+    "card": "Houndoom",
+    "rarity": "Common",
+    "number": "034",
+    "price": 0.05
+  },
+  {
+    "card": "Torkoal",
+    "rarity": "Uncommon",
+    "number": "035",
+    "price": 0.05
+  },
+  {
+    "card": "Fuecoco",
+    "rarity": "Common",
+    "number": "036",
+    "price": 0.05
+  },
+  {
+    "card": "Crocalor",
+    "rarity": "Uncommon",
+    "number": "037",
+    "price": 0.05
+  },
+  {
+    "card": "Skeledirge",
+    "rarity": "Rare",
+    "number": "038",
+    "price": 0.13
+  },
+  {
+    "card": "Charcadet",
+    "rarity": "Common",
+    "number": "039",
+    "price": 0.05
+  },
+  {
+    "card": "Charcadet",
+    "rarity": "Common",
+    "number": "040",
+    "price": 0.07
+  },
+  {
+    "card": "Armarouge",
+    "rarity": "Rare",
+    "number": "041",
+    "price": 0.12
+  },
+  {
+    "card": "Slowpoke",
+    "rarity": "Common",
+    "number": "042",
+    "price": 0.04
+  },
+  {
+    "card": "Slowbro",
+    "rarity": "Rare",
+    "number": "043",
+    "price": 0.11
+  },
+  {
+    "card": "Magikarp",
+    "rarity": "Common",
+    "number": "044",
+    "price": 0.06
+  },
+  {
+    "card": "Gyarados ex",
+    "rarity": "Double Rare",
+    "number": "045",
+    "price": 1.25
+  },
+  {
+    "card": "Buizel",
+    "rarity": "Common",
+    "number": "046",
+    "price": 0.04
+  },
+  {
+    "card": "Floatzel",
+    "rarity": "Uncommon",
+    "number": "047",
+    "price": 0.04
+  },
+  {
+    "card": "Alomomola",
+    "rarity": "Common",
+    "number": "048",
+    "price": 0.03
+  },
+  {
+    "card": "Clauncher",
+    "rarity": "Common",
+    "number": "049",
+    "price": 0.02
+  },
+  {
+    "card": "Clawitzer",
+    "rarity": "Common",
+    "number": "050",
+    "price": 0.06
+  },
+  {
+    "card": "Bruxish",
+    "rarity": "Common",
+    "number": "051",
+    "price": 0.03
+  },
+  {
+    "card": "Quaxly",
+    "rarity": "Common",
+    "number": "052",
+    "price": 0.03
+  },
+  {
+    "card": "Quaxwell",
+    "rarity": "Uncommon",
+    "number": "053",
+    "price": 0.04
+  },
+  {
+    "card": "Quaquaval",
+    "rarity": "Rare",
+    "number": "054",
+    "price": 0.1
+  },
+  {
+    "card": "Wiglett",
+    "rarity": "Common",
+    "number": "055",
+    "price": 0.04
+  },
+  {
+    "card": "Wiglett",
+    "rarity": "Common",
+    "number": "056",
+    "price": 0.07
+  },
+  {
+    "card": "Wugtrio",
+    "rarity": "Uncommon",
+    "number": "057",
+    "price": 0.07
+  },
+  {
+    "card": "Cetoddle",
+    "rarity": "Common",
+    "number": "058",
+    "price": 0.05
+  },
+  {
+    "card": "Cetoddle",
+    "rarity": "Common",
+    "number": "059",
+    "price": 0.05
+  },
+  {
+    "card": "Cetitan",
+    "rarity": "Uncommon",
+    "number": "060",
+    "price": 0.03
+  },
+  {
+    "card": "Dondozo",
+    "rarity": "Rare",
+    "number": "061",
+    "price": 0.09
+  },
+  {
+    "card": "Tatsugiri",
+    "rarity": "Uncommon",
+    "number": "062",
+    "price": 0.03
+  },
+  {
+    "card": "Magnemite",
+    "rarity": "Common",
+    "number": "063",
+    "price": 0.04
+  },
+  {
+    "card": "Magneton",
+    "rarity": "Common",
+    "number": "064",
+    "price": 0.03
+  },
+  {
+    "card": "Magnezone ex",
+    "rarity": "Double Rare",
+    "number": "065",
+    "price": 0.89
+  },
+  {
+    "card": "Mareep",
+    "rarity": "Common",
+    "number": "066",
+    "price": 0.05
+  },
+  {
+    "card": "Flaaffy",
+    "rarity": "Uncommon",
+    "number": "067",
+    "price": 0.04
+  },
+  {
+    "card": "Pachirisu",
+    "rarity": "Uncommon",
+    "number": "068",
+    "price": 0.04
+  },
+  {
+    "card": "Rotom",
+    "rarity": "Common",
+    "number": "069",
+    "price": 0.03
+  },
+  {
+    "card": "Rotom",
+    "rarity": "Common",
+    "number": "070",
+    "price": 0.07
+  },
+  {
+    "card": "Toxel",
+    "rarity": "Common",
+    "number": "071",
+    "price": 0.03
+  },
+  {
+    "card": "Toxtricity",
+    "rarity": "Uncommon",
+    "number": "072",
+    "price": 0.03
+  },
+  {
+    "card": "Pawmi",
+    "rarity": "Common",
+    "number": "073",
+    "price": 0.04
+  },
+  {
+    "card": "Pawmi",
+    "rarity": "Common",
+    "number": "074",
+    "price": 0.03
+  },
+  {
+    "card": "Pawmo",
+    "rarity": "Common",
+    "number": "075",
+    "price": 0.05
+  },
+  {
+    "card": "Pawmot",
+    "rarity": "Rare",
+    "number": "076",
+    "price": 0.1
+  },
+  {
+    "card": "Wattrel",
+    "rarity": "Common",
+    "number": "077",
+    "price": 0.03
+  },
+  {
+    "card": "Wattrel",
+    "rarity": "Common",
+    "number": "078",
+    "price": 0.03
+  },
+  {
+    "card": "Kilowattrel",
+    "rarity": "Uncommon",
+    "number": "079",
+    "price": 0.03
+  },
+  {
+    "card": "Miraidon",
+    "rarity": "Rare",
+    "number": "080",
+    "price": 0.1
+  },
+  {
+    "card": "Miraidon ex",
+    "rarity": "Double Rare",
+    "number": "081",
+    "price": 1.61
+  },
+  {
+    "card": "Drowzee",
+    "rarity": "Common",
+    "number": "082",
+    "price": 0.04
+  },
+  {
+    "card": "Hypno",
+    "rarity": "Uncommon",
+    "number": "083",
+    "price": 0.03
+  },
+  {
+    "card": "Ralts",
+    "rarity": "Common",
+    "number": "084",
+    "price": 0.06
+  },
+  {
+    "card": "Kirlia",
+    "rarity": "Common",
+    "number": "085",
+    "price": 0.03
+  },
+  {
+    "card": "Gardevoir ex",
+    "rarity": "Double Rare",
+    "number": "086",
+    "price": 2.55
+  },
+  {
+    "card": "Shuppet",
+    "rarity": "Common",
+    "number": "087",
+    "price": 0.02
+  },
+  {
+    "card": "Banette ex",
+    "rarity": "Double Rare",
+    "number": "088",
+    "price": 0.84
+  },
+  {
+    "card": "Drifloon",
+    "rarity": "Common",
+    "number": "089",
+    "price": 0.03
+  },
+  {
+    "card": "Drifblim",
+    "rarity": "Uncommon",
+    "number": "090",
+    "price": 0.03
+  },
+  {
+    "card": "Flabebe",
+    "rarity": "Common",
+    "number": "091",
+    "price": 0.02
+  },
+  {
+    "card": "Floette",
+    "rarity": "Common",
+    "number": "092",
+    "price": 0.04
+  },
+  {
+    "card": "Florges",
+    "rarity": "Uncommon",
+    "number": "093",
+    "price": 0.04
+  },
+  {
+    "card": "Dedenne",
+    "rarity": "Common",
+    "number": "094",
+    "price": 0.04
+  },
+  {
+    "card": "Dedenne",
+    "rarity": "Common",
+    "number": "095",
+    "price": 0.05
+  },
+  {
+    "card": "Klefki",
+    "rarity": "Rare",
+    "number": "096",
+    "price": 0.17
+  },
+  {
+    "card": "Fidough",
+    "rarity": "Common",
+    "number": "097",
+    "price": 0.06
+  },
+  {
+    "card": "Fidough",
+    "rarity": "Common",
+    "number": "098",
+    "price": 0.05
+  },
+  {
+    "card": "Dachsbun",
+    "rarity": "Uncommon",
+    "number": "099",
+    "price": 0.04
+  },
+  {
+    "card": "Flittle",
+    "rarity": "Common",
+    "number": "100",
+    "price": 0.03
+  },
+  {
+    "card": "Flittle",
+    "rarity": "Common",
+    "number": "101",
+    "price": 0.03
+  },
+  {
+    "card": "Flittle",
+    "rarity": "Common",
+    "number": "102",
+    "price": 0.03
+  },
+  {
+    "card": "Espathra",
+    "rarity": "Uncommon",
+    "number": "103",
+    "price": 0.03
+  },
+  {
+    "card": "Greavard",
+    "rarity": "Common",
+    "number": "104",
+    "price": 0.03
+  },
+  {
+    "card": "Greavard",
+    "rarity": "Common",
+    "number": "105",
+    "price": 0.03
+  },
+  {
+    "card": "Houndstone",
+    "rarity": "Rare",
+    "number": "106",
+    "price": 0.09
+  },
+  {
+    "card": "Mankey",
+    "rarity": "Common",
+    "number": "107",
+    "price": 0.03
+  },
+  {
+    "card": "Primeape",
+    "rarity": "Common",
+    "number": "108",
+    "price": 0.04
+  },
+  {
+    "card": "Annihilape",
+    "rarity": "Rare",
+    "number": "109",
+    "price": 0.08
+  },
+  {
+    "card": "Meditite",
+    "rarity": "Common",
+    "number": "110",
+    "price": 0.02
+  },
+  {
+    "card": "Medicham",
+    "rarity": "Uncommon",
+    "number": "111",
+    "price": 0.06
+  },
+  {
+    "card": "Riolu",
+    "rarity": "Common",
+    "number": "112",
+    "price": 0.03
+  },
+  {
+    "card": "Riolu",
+    "rarity": "Common",
+    "number": "113",
+    "price": 0.04
+  },
+  {
+    "card": "Lucario",
+    "rarity": "Uncommon",
+    "number": "114",
+    "price": 0.05
+  },
+  {
+    "card": "Sandile",
+    "rarity": "Common",
+    "number": "115",
+    "price": 0.02
+  },
+  {
+    "card": "Krokorok",
+    "rarity": "Common",
+    "number": "116",
+    "price": 0.04
+  },
+  {
+    "card": "Krookodile",
+    "rarity": "Uncommon",
+    "number": "117",
+    "price": 0.04
+  },
+  {
+    "card": "Hawlucha",
+    "rarity": "Rare",
+    "number": "118",
+    "price": 0.15
+  },
+  {
+    "card": "Silicobra",
+    "rarity": "Common",
+    "number": "119",
+    "price": 0.04
+  },
+  {
+    "card": "Sandaconda",
+    "rarity": "Uncommon",
+    "number": "120",
+    "price": 0.02
+  },
+  {
+    "card": "Stonjourner",
+    "rarity": "Uncommon",
+    "number": "121",
+    "price": 0.02
+  },
+  {
+    "card": "Klawf",
+    "rarity": "Rare",
+    "number": "122",
+    "price": 0.06
+  },
+  {
+    "card": "Great Tusk ex",
+    "rarity": "Double Rare",
+    "number": "123",
+    "price": 0.75
+  },
+  {
+    "card": "Koraidon",
+    "rarity": "Rare",
+    "number": "124",
+    "price": 0.09
+  },
+  {
+    "card": "Koraidon ex",
+    "rarity": "Double Rare",
+    "number": "125",
+    "price": 1.23
+  },
+  {
+    "card": "Grimer",
+    "rarity": "Common",
+    "number": "126",
+    "price": 0.02
+  },
+  {
+    "card": "Muk",
+    "rarity": "Uncommon",
+    "number": "127",
+    "price": 0.05
+  },
+  {
+    "card": "Seviper",
+    "rarity": "Common",
+    "number": "128",
+    "price": 0.05
+  },
+  {
+    "card": "Spiritomb",
+    "rarity": "Uncommon",
+    "number": "129",
+    "price": 0.03
+  },
+  {
+    "card": "Croagunk",
+    "rarity": "Common",
+    "number": "130",
+    "price": 0.06
+  },
+  {
+    "card": "Toxicroak ex",
+    "rarity": "Double Rare",
+    "number": "131",
+    "price": 0.66
+  },
+  {
+    "card": "Pawniard",
+    "rarity": "Common",
+    "number": "132",
+    "price": 0.04
+  },
+  {
+    "card": "Bisharp",
+    "rarity": "Common",
+    "number": "133",
+    "price": 0.04
+  },
+  {
+    "card": "Kingambit",
+    "rarity": "Rare",
+    "number": "134",
+    "price": 0.08
+  },
+  {
+    "card": "Maschiff",
+    "rarity": "Common",
+    "number": "135",
+    "price": 0.03
+  },
+  {
+    "card": "Maschiff",
+    "rarity": "Common",
+    "number": "136",
+    "price": 0.03
+  },
+  {
+    "card": "Mabosstiff",
+    "rarity": "Uncommon",
+    "number": "137",
+    "price": 0.05
+  },
+  {
+    "card": "Bombirdier",
+    "rarity": "Uncommon",
+    "number": "138",
+    "price": 0.04
+  },
+  {
+    "card": "Forretress",
+    "rarity": "Uncommon",
+    "number": "139",
+    "price": 0.04
+  },
+  {
+    "card": "Varoom",
+    "rarity": "Common",
+    "number": "140",
+    "price": 0.04
+  },
+  {
+    "card": "Varoom",
+    "rarity": "Common",
+    "number": "141",
+    "price": 0.05
+  },
+  {
+    "card": "Revavroom",
+    "rarity": "Rare",
+    "number": "142",
+    "price": 0.14
+  },
+  {
+    "card": "Iron Treads ex",
+    "rarity": "Double Rare",
+    "number": "143",
+    "price": 0.66
+  },
+  {
+    "card": "Chansey",
+    "rarity": "Common",
+    "number": "144",
+    "price": 0.04
+  },
+  {
+    "card": "Blissey",
+    "rarity": "Uncommon",
+    "number": "145",
+    "price": 0.03
+  },
+  {
+    "card": "Zangoose",
+    "rarity": "Common",
+    "number": "146",
+    "price": 0.03
+  },
+  {
+    "card": "Zangoose",
+    "rarity": "Uncommon",
+    "number": "147",
+    "price": 0.04
+  },
+  {
+    "card": "Starly",
+    "rarity": "Common",
+    "number": "148",
+    "price": 0.03
+  },
+  {
+    "card": "Staravia",
+    "rarity": "Common",
+    "number": "149",
+    "price": 0.04
+  },
+  {
+    "card": "Staraptor",
+    "rarity": "Uncommon",
+    "number": "150",
+    "price": 0.02
+  },
+  {
+    "card": "Skwovet",
+    "rarity": "Common",
+    "number": "151",
+    "price": 0.09
+  },
+  {
+    "card": "Greedent",
+    "rarity": "Uncommon",
+    "number": "152",
+    "price": 0.03
+  },
+  {
+    "card": "Indeedee",
+    "rarity": "Rare",
+    "number": "153",
+    "price": 0.06
+  },
+  {
+    "card": "Lechonk",
+    "rarity": "Common",
+    "number": "154",
+    "price": 0.05
+  },
+  {
+    "card": "Lechonk",
+    "rarity": "Common",
+    "number": "155",
+    "price": 0.05
+  },
+  {
+    "card": "Lechonk",
+    "rarity": "Common",
+    "number": "156",
+    "price": 0.06
+  },
+  {
+    "card": "Oinkologne",
+    "rarity": "Uncommon",
+    "number": "157",
+    "price": 0.04
+  },
+  {
+    "card": "Oinkologne ex",
+    "rarity": "Double Rare",
+    "number": "158",
+    "price": 0.76
+  },
+  {
+    "card": "Tandemaus",
+    "rarity": "Common",
+    "number": "159",
+    "price": 0.04
+  },
+  {
+    "card": "Tandemaus",
+    "rarity": "Common",
+    "number": "160",
+    "price": 0.04
+  },
+  {
+    "card": "Maushold",
+    "rarity": "Uncommon",
+    "number": "161",
+    "price": 0.05
+  },
+  {
+    "card": "Squawkabilly",
+    "rarity": "Common",
+    "number": "162",
+    "price": 0.04
+  },
+  {
+    "card": "Cyclizar",
+    "rarity": "Uncommon",
+    "number": "163",
+    "price": 0.03
+  },
+  {
+    "card": "Cyclizar",
+    "rarity": "Rare",
+    "number": "164",
+    "price": 0.08
+  },
+  {
+    "card": "Flamigo",
+    "rarity": "Uncommon",
+    "number": "165",
+    "price": 0.04
+  },
+  {
+    "card": "Arven",
+    "rarity": "Uncommon",
+    "number": "166",
+    "price": 0.15
+  },
+  {
+    "card": "Beach Court",
+    "rarity": "Uncommon",
+    "number": "167",
+    "price": 0.12
+  },
+  {
+    "card": "Crushing Hammer",
+    "rarity": "Common",
+    "number": "168",
+    "price": 0.06
+  },
+  {
+    "card": "Defiance Band",
+    "rarity": "Uncommon",
+    "number": "169",
+    "price": 0.08
+  },
+  {
+    "card": "Electric Generator",
+    "rarity": "Uncommon",
+    "number": "170",
+    "price": 0.12
+  },
+  {
+    "card": "Energy Retrieval",
+    "rarity": "Common",
+    "number": "171",
+    "price": 0.08
+  },
+  {
+    "card": "Energy Search",
+    "rarity": "Common",
+    "number": "172",
+    "price": 0.06
+  },
+  {
+    "card": "Energy Switch",
+    "rarity": "Common",
+    "number": "173",
+    "price": 0.06
+  },
+  {
+    "card": "Exp. Share",
+    "rarity": "Uncommon",
+    "number": "174",
+    "price": 0.06
+  },
+  {
+    "card": "Jacq",
+    "rarity": "Uncommon",
+    "number": "175",
+    "price": 0.07
+  },
+  {
+    "card": "Judge",
+    "rarity": "Uncommon",
+    "number": "176",
+    "price": 0.3
+  },
+  {
+    "card": "Katy",
+    "rarity": "Uncommon",
+    "number": "177",
+    "price": 0.04
+  },
+  {
+    "card": "Mesagoza",
+    "rarity": "Uncommon",
+    "number": "178",
+    "price": 0.08
+  },
+  {
+    "card": "Miriam",
+    "rarity": "Uncommon",
+    "number": "179",
+    "price": 0.06
+  },
+  {
+    "card": "Nemona",
+    "rarity": "Common",
+    "number": "180",
+    "price": 0.04
+  },
+  {
+    "card": "Nest Ball",
+    "rarity": "Uncommon",
+    "number": "181",
+    "price": 0.71
+  },
+  {
+    "card": "Pal Pad",
+    "rarity": "Common",
+    "number": "182",
+    "price": 0.12
+  },
+  {
+    "card": "Penny",
+    "rarity": "Uncommon",
+    "number": "183",
+    "price": 0.14
+  },
+  {
+    "card": "Picnic Basket",
+    "rarity": "Uncommon",
+    "number": "184",
+    "price": 0.04
+  },
+  {
+    "card": "Poke Ball",
+    "rarity": "Common",
+    "number": "185",
+    "price": 0.04
+  },
+  {
+    "card": "Pokegear 3.0",
+    "rarity": "Common",
+    "number": "186",
+    "price": 0.11
+  },
+  {
+    "card": "Pokemon Catcher",
+    "rarity": "Common",
+    "number": "187",
+    "price": 0.07
+  },
+  {
+    "card": "Potion",
+    "rarity": "Common",
+    "number": "188",
+    "price": 0.04
+  },
+  {
+    "card": "Professor's Research",
+    "rarity": "Rare",
+    "number": "189",
+    "price": 0.22
+  },
+  {
+    "card": "Professor's Research",
+    "rarity": "Rare",
+    "number": "190",
+    "price": 0.13
+  },
+  {
+    "card": "Rare Candy",
+    "rarity": "Common",
+    "number": "191",
+    "price": 0.11
+  },
+  {
+    "card": "Rock Chestplate",
+    "rarity": "Uncommon",
+    "number": "192",
+    "price": 0.05
+  },
+  {
+    "card": "Rocky Helmet",
+    "rarity": "Uncommon",
+    "number": "193",
+    "price": 0.05
+  },
+  {
+    "card": "Switch",
+    "rarity": "Common",
+    "number": "194",
+    "price": 0.17
+  },
+  {
+    "card": "Team Star Grunt",
+    "rarity": "Uncommon",
+    "number": "195",
+    "price": 0.03
+  },
+  {
+    "card": "Ultra Ball",
+    "rarity": "Uncommon",
+    "number": "196",
+    "price": 0.14
+  },
+  {
+    "card": "Vitality Band",
+    "rarity": "Uncommon",
+    "number": "197",
+    "price": 0.05
+  },
+  {
+    "card": "Youngster",
+    "rarity": "Uncommon",
+    "number": "198",
+    "price": 0.03
+  },
+  {
+    "card": "Tarountula",
+    "rarity": "Illustration Rare",
+    "number": "199",
+    "price": 3.84
+  },
+  {
+    "card": "Dolliv",
+    "rarity": "Illustration Rare",
+    "number": "200",
+    "price": 2.25
+  },
+  {
+    "card": "Toedscool",
+    "rarity": "Illustration Rare",
+    "number": "201",
+    "price": 2.71
+  },
+  {
+    "card": "Scovillain",
+    "rarity": "Illustration Rare",
+    "number": "202",
+    "price": 3.0
+  },
+  {
+    "card": "Armarouge",
+    "rarity": "Illustration Rare",
+    "number": "203",
+    "price": 4.92
+  },
+  {
+    "card": "Slowpoke",
+    "rarity": "Illustration Rare",
+    "number": "204",
+    "price": 9.15
+  },
+  {
+    "card": "Clauncher",
+    "rarity": "Illustration Rare",
+    "number": "205",
+    "price": 3.17
+  },
+  {
+    "card": "Wiglett",
+    "rarity": "Illustration Rare",
+    "number": "206",
+    "price": 2.79
+  },
+  {
+    "card": "Dondozo",
+    "rarity": "Illustration Rare",
+    "number": "207",
+    "price": 3.77
+  },
+  {
+    "card": "Pachirisu",
+    "rarity": "Illustration Rare",
+    "number": "208",
+    "price": 3.66
+  },
+  {
+    "card": "Pawmot",
+    "rarity": "Illustration Rare",
+    "number": "209",
+    "price": 2.33
+  },
+  {
+    "card": "Drowzee",
+    "rarity": "Illustration Rare",
+    "number": "210",
+    "price": 4.73
+  },
+  {
+    "card": "Ralts",
+    "rarity": "Illustration Rare",
+    "number": "211",
+    "price": 14.73
+  },
+  {
+    "card": "Kirlia",
+    "rarity": "Illustration Rare",
+    "number": "212",
+    "price": 10.94
+  },
+  {
+    "card": "Fidough",
+    "rarity": "Illustration Rare",
+    "number": "213",
+    "price": 3.8
+  },
+  {
+    "card": "Greavard",
+    "rarity": "Illustration Rare",
+    "number": "214",
+    "price": 4.11
+  },
+  {
+    "card": "Riolu",
+    "rarity": "Illustration Rare",
+    "number": "215",
+    "price": 8.31
+  },
+  {
+    "card": "Sandile",
+    "rarity": "Illustration Rare",
+    "number": "216",
+    "price": 3.27
+  },
+  {
+    "card": "Klawf",
+    "rarity": "Illustration Rare",
+    "number": "217",
+    "price": 2.23
+  },
+  {
+    "card": "Mabosstiff",
+    "rarity": "Illustration Rare",
+    "number": "218",
+    "price": 3.37
+  },
+  {
+    "card": "Bombirdier",
+    "rarity": "Illustration Rare",
+    "number": "219",
+    "price": 2.03
+  },
+  {
+    "card": "Kingambit",
+    "rarity": "Illustration Rare",
+    "number": "220",
+    "price": 4.47
+  },
+  {
+    "card": "Starly",
+    "rarity": "Illustration Rare",
+    "number": "221",
+    "price": 2.48
+  },
+  {
+    "card": "Skwovet",
+    "rarity": "Illustration Rare",
+    "number": "222",
+    "price": 4.59
+  },
+  {
+    "card": "Spidops ex",
+    "rarity": "Ultra Rare",
+    "number": "223",
+    "price": 1.63
+  },
+  {
+    "card": "Arcanine ex",
+    "rarity": "Ultra Rare",
+    "number": "224",
+    "price": 11.9
+  },
+  {
+    "card": "Gyarados ex",
+    "rarity": "Ultra Rare",
+    "number": "225",
+    "price": 15.9
+  },
+  {
+    "card": "Magnezone ex",
+    "rarity": "Ultra Rare",
+    "number": "226",
+    "price": 2.55
+  },
+  {
+    "card": "Miraidon ex",
+    "rarity": "Ultra Rare",
+    "number": "227",
+    "price": 4.97
+  },
+  {
+    "card": "Gardevoir ex",
+    "rarity": "Ultra Rare",
+    "number": "228",
+    "price": 6.51
+  },
+  {
+    "card": "Banette ex",
+    "rarity": "Ultra Rare",
+    "number": "229",
+    "price": 2.81
+  },
+  {
+    "card": "Great Tusk ex",
+    "rarity": "Ultra Rare",
+    "number": "230",
+    "price": 1.98
+  },
+  {
+    "card": "Koraidon ex",
+    "rarity": "Ultra Rare",
+    "number": "231",
+    "price": 2.67
+  },
+  {
+    "card": "Toxicroak ex",
+    "rarity": "Ultra Rare",
+    "number": "232",
+    "price": 1.86
+  },
+  {
+    "card": "Iron Treads ex",
+    "rarity": "Ultra Rare",
+    "number": "233",
+    "price": 1.48
+  },
+  {
+    "card": "Oinkologne ex",
+    "rarity": "Ultra Rare",
+    "number": "234",
+    "price": 1.37
+  },
+  {
+    "card": "Arven",
+    "rarity": "Ultra Rare",
+    "number": "235",
+    "price": 3.9
+  },
+  {
+    "card": "Jacq",
+    "rarity": "Ultra Rare",
+    "number": "236",
+    "price": 2.6
+  },
+  {
+    "card": "Katy",
+    "rarity": "Ultra Rare",
+    "number": "237",
+    "price": 3.67
+  },
+  {
+    "card": "Miriam",
+    "rarity": "Ultra Rare",
+    "number": "238",
+    "price": 17.52
+  },
+  {
+    "card": "Penny",
+    "rarity": "Ultra Rare",
+    "number": "239",
+    "price": 7.49
+  },
+  {
+    "card": "Professor's Research",
+    "rarity": "Ultra Rare",
+    "number": "240",
+    "price": 9.5
+  },
+  {
+    "card": "Professor's Research",
+    "rarity": "Ultra Rare",
+    "number": "241",
+    "price": 3.41
+  },
+  {
+    "card": "Team Star Grunt",
+    "rarity": "Ultra Rare",
+    "number": "242",
+    "price": 1.93
+  },
+  {
+    "card": "Spidops ex",
+    "rarity": "Special Illustration Rare",
+    "number": "243",
+    "price": 3.0
+  },
+  {
+    "card": "Miraidon ex",
+    "rarity": "Special Illustration Rare",
+    "number": "244",
+    "price": 21.33
+  },
+  {
+    "card": "Gardevoir ex",
+    "rarity": "Special Illustration Rare",
+    "number": "245",
+    "price": 26.39
+  },
+  {
+    "card": "Great Tusk ex",
+    "rarity": "Special Illustration Rare",
+    "number": "246",
+    "price": 8.03
+  },
+  {
+    "card": "Koraidon ex",
+    "rarity": "Special Illustration Rare",
+    "number": "247",
+    "price": 18.22
+  },
+  {
+    "card": "Iron Treads ex",
+    "rarity": "Special Illustration Rare",
+    "number": "248",
+    "price": 4.22
+  },
+  {
+    "card": "Arven",
+    "rarity": "Special Illustration Rare",
+    "number": "249",
+    "price": 5.56
+  },
+  {
+    "card": "Jacq",
+    "rarity": "Special Illustration Rare",
+    "number": "250",
+    "price": 4.08
+  },
+  {
+    "card": "Miriam",
+    "rarity": "Special Illustration Rare",
+    "number": "251",
+    "price": 48.05
+  },
+  {
+    "card": "Penny",
+    "rarity": "Special Illustration Rare",
+    "number": "252",
+    "price": 10.3
+  },
+  {
+    "card": "Miraidon ex",
+    "rarity": "Hyper Rare",
+    "number": "253",
+    "price": 8.49
+  },
+  {
+    "card": "Koraidon ex",
+    "rarity": "Hyper Rare",
+    "number": "254",
+    "price": 7.06
+  },
+  {
+    "card": "Nest Ball",
+    "rarity": "Hyper Rare",
+    "number": "255",
+    "price": 13.02
+  },
+  {
+    "card": "Rare Candy",
+    "rarity": "Hyper Rare",
+    "number": "256",
+    "price": 8.97
+  },
+  {
+    "card": "Basic Lightning Energy",
+    "rarity": "Hyper Rare",
+    "number": "257",
+    "price": 4.87
+  },
+  {
+    "card": "Basic Fighting Energy",
+    "rarity": "Hyper Rare",
+    "number": "258",
+    "price": 3.85
+  }
+]

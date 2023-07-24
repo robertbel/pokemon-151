@@ -1,0 +1,24 @@
+body {
+  background-color: var(--color-alpha);
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-base);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  background-image: url("@/assets/images/hero-pattern.png");
+  background-blend-mode: luminosity;
+  opacity: 0.1;
+  z-index: -1;
+  mask-image: radial-gradient(
+    closest-corner circle at 50% 0%,
+    #000 0%,
+    transparent 100%
+  );
+}
