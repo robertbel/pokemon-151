@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <img src="@/assets/images/logo.png" alt="Pokémon Scarlet & Violet 151" />
+    <img src="@/assets/images/logo.webp" alt="Pokémon Scarlet & Violet 151" />
   </header>
   <main class="main">
     <section class="section hero">
@@ -31,6 +31,16 @@
 
 <script setup>
 import VanillaTilt from "vanilla-tilt";
+
+useSeoMeta({
+  title: "Pokémon Scarlet & Violet 151",
+  ogTitle: "Pokémon Scarlet & Violet 151",
+  description:
+    "Verlies jezelf opnieuw in de wereld van Kanto met Pokémon Scarlet & Violet 151.",
+  ogDescription:
+    "Verlies jezelf opnieuw in de wereld van Kanto met Pokémon Scarlet & Violet 151.",
+  ogImage: "@/assets/images/og-image.png",
+});
 
 const tiltElement = ref(null);
 
@@ -105,6 +115,10 @@ onMounted(() => {
   color: #542760;
 }
 
+.button-link.primary:hover {
+  background-color: #f9da87;
+}
+
 .button-link.secondary {
   border: 2px solid #fff;
   color: #fff;
@@ -112,10 +126,6 @@ onMounted(() => {
 
 .card-container {
   flex: 1;
-  /* display: grid;
-  place-items: center;
-  height: 100%;
-  overflow: hidden; */
 }
 
 .card {
@@ -123,9 +133,9 @@ onMounted(() => {
   will-change: transform;
   width: 100%;
   aspect-ratio: 4 / 5;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   background-color: red;
-  background-image: url("@/assets/images/card_mew.jpg");
+  background-image: url("@/assets/images/card_mew.webp");
   background-size: cover;
 }
 
