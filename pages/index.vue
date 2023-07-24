@@ -17,6 +17,7 @@
             href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
             target="_blank"
             class="button-link primary"
+            @click="storeClick"
             >Pre-order bij Bol.com!</a
           >
           <!-- <a href="#" class="button-link secondary">Ontdek paketten</a> -->
@@ -30,6 +31,7 @@
 </template>
 
 <script setup>
+import va from "@vercel/analytics";
 import VanillaTilt from "vanilla-tilt";
 
 useSeoMeta({
@@ -43,6 +45,10 @@ useSeoMeta({
 });
 
 const tiltElement = ref(null);
+
+function storeClick() {
+  va.track("Bol.com main c2a");
+}
 
 onMounted(() => {
   VanillaTilt.init(tiltElement.value, {
