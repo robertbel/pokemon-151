@@ -13,8 +13,13 @@
           manier. Ga het avontuur aan, en verzamel ze allemaal!
         </p>
         <div class="actions">
-          <a href="#" class="button-link primary">Pre-order bij Bol.com!</a>
-          <a href="#" class="button-link secondary">Ontdek paketten</a>
+          <a
+            href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
+            target="_blank"
+            class="button-link primary"
+            >Pre-order bij Bol.com!</a
+          >
+          <!-- <a href="#" class="button-link secondary">Ontdek paketten</a> -->
         </div>
       </div>
       <div class="card-container">
@@ -42,11 +47,9 @@ onMounted(() => {
 
 <style scoped>
 .header {
-  position: fixed;
-  top: 2rem;
-  width: 100%;
   display: flex;
   justify-content: center;
+  margin-block: 2rem;
 }
 .main {
   max-width: 65rem;
@@ -54,23 +57,23 @@ onMounted(() => {
 }
 
 .section {
-  position: relative;
-  display: grid;
-  align-items: center;
-  height: 100vh;
-  height: 100dvh;
   padding-inline: var(--space-l-xl);
   color: var(--font-base-color);
 }
 
 .section.hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .section.hero {
+    flex-direction: column;
+  }
 }
 
 .section-content {
-  max-width: 37.5rem;
+  flex: 1;
   display: grid;
   gap: var(--space-s-m);
 }
@@ -82,13 +85,14 @@ onMounted(() => {
 
 .actions {
   padding-block-start: 1rem;
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .button-link {
   text-decoration: none;
-  padding-inline: var(--space-l);
+  padding-inline: var(--space-s);
   padding-block: var(--space-s);
   display: grid;
   place-items: center;
@@ -107,22 +111,33 @@ onMounted(() => {
 }
 
 .card-container {
-  display: grid;
+  flex: 1;
+  /* display: grid;
   place-items: center;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .card {
   /* position: relative; */
   will-change: transform;
-  width: 400px;
-  height: 500px;
-  border-radius: 1rem;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 1.25rem;
   background-color: red;
   background-image: url("@/assets/images/card_mew.jpg");
   background-size: cover;
 }
+
+@supports not (aspect-ratio: 4 / 5) {
+  .card {
+    padding-top: 100%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
 /* 
 .card::before {
   content: '';
