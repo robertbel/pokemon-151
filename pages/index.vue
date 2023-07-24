@@ -4,6 +4,7 @@
   </header>
   <main class="main">
     <section class="section hero">
+      <ColorBox color="var(--color-alpha)" />
       <div class="section-content">
         <div>Ontdek de glans van het verleden!</div>
         <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
@@ -26,11 +27,42 @@
         <div class="card" ref="tiltElement"></div>
       </div>
     </section>
+
+    <section class="la">
+      <ColorBox color="#F38696" />
+      <div class="sub one">sub</div>
+      <div class="sub two">sub</div>
+    </section>
+
+    <section class="la">
+      <ColorBox color="#79C7D7" />
+      <div class="sub one">sub</div>
+      <div class="sub two">sub</div>
+    </section>
+
+    <section class="la">
+      <ColorBox color="#E7DB71" />
+      <div class="sub one">sub</div>
+      <div class="sub two">sub</div>
+    </section>
+
+    <section class="la">
+      <ColorBox color="#71E7A0" />
+      <div class="sub one">sub</div>
+      <div class="sub two">sub</div>
+    </section>
   </main>
 </template>
 
 <script setup>
 import VanillaTilt from "vanilla-tilt";
+
+const currentColor = useCurrentColor();
+
+watch(currentColor, (newColor) => {
+  document.querySelector("body").style.backgroundColor = newColor;
+  console.log(newColor);
+});
 
 useSeoMeta({
   title: "Pokémon Scarlet & Violet 151",
@@ -74,6 +106,8 @@ onMounted(() => {
 .section.hero {
   display: flex;
   gap: 2rem;
+  height: calc(80vh - env(safe-area-inset-bottom));
+  height: 80dvh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,7 +118,8 @@ onMounted(() => {
 
 .section-content {
   flex: 1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-s-m);
 }
 
@@ -134,7 +169,7 @@ onMounted(() => {
   width: 100%;
   aspect-ratio: 4 / 5;
   border-radius: 1.5rem;
-  background-color: red;
+  background-color: #fff;
   background-image: url("@/assets/images/card_mew.webp");
   background-size: cover;
 }
@@ -164,4 +199,35 @@ onMounted(() => {
   -webkit-transition: .3s;
   transition: .3s;
 } */
+
+section.la {
+  height: calc(100vh - env(safe-area-inset-bottom));
+  height: 100dvh;
+  padding-block: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 200px;
+  gap: 1rem;
+  grid-template-areas:
+    "block block"
+    "sub1 sub2";
+}
+
+.sub {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.sub.one {
+  grid-area: sub1;
+}
+
+.sub.two {
+  grid-area: sub2;
+}
+
+.spacer {
+  height: 100vh;
+}
 </style>

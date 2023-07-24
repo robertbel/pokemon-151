@@ -1,7 +1,9 @@
 <template>
-  <div class="color-box" :style="{ backgroundColor: color }" ref="colorBoxRef">
-    <h2>Hallo</h2>
-  </div>
+  <div
+    class="color-box"
+    :style="{ backgroundColor: color }"
+    ref="colorBoxRef"
+  ></div>
 </template>
 
 <script setup>
@@ -22,6 +24,10 @@ watch(isVisible, (newVal) => {
   if (newVal) {
     currentColor.value = props.color;
   }
+  console.log(isVisible);
+  // } else {
+  //   currentColor.value = "var(--color-alpha)";
+  // }
 });
 </script>
 
@@ -29,5 +35,6 @@ watch(isVisible, (newVal) => {
 .color-box {
   border-radius: 2rem;
   grid-area: block;
+  min-height: 1px;
 }
 </style>
