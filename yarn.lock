@@ -668,6 +668,11 @@
     hookable "^5.5.3"
     unhead "1.1.30"
 
+"@vercel/analytics@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.0.1.tgz"
+  integrity sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==
+
 "@vercel/nft@^0.22.6":
   version "0.22.6"
   resolved "https://registry.npmjs.org/@vercel/nft/-/nft-0.22.6.tgz"

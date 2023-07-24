@@ -10,4 +10,5 @@ export default defineNuxtConfig({
     preset: "vercel-edge",
   },
   modules: ["@vueuse/nuxt"],
+  plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
 });
