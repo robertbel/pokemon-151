@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="color-box"
-    :style="{ backgroundColor: color }"
-    ref="colorBoxRef"
-  ></div>
+  <div class="color-box" ref="colorBoxRef"></div>
 </template>
 
 <script setup>

@@ -4,7 +4,7 @@
   </header>
   <main class="main">
     <section class="section hero">
-      <ColorBox color="var(--color-alpha)" />
+      <ColorBox color="var(--color-alpha)" style="opacity: 0" />
       <div class="section-content">
         <div>Ontdek de glans van het verleden!</div>
         <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
