@@ -1,69 +1,36 @@
 <template>
-  <header class="header">
-    <img src="@/assets/images/logo.webp" alt="Pokémon Scarlet & Violet 151" />
-  </header>
-  <main class="main">
-    <section class="section hero">
-      <ColorBox color="var(--color-alpha)" style="opacity: 0" />
-      <div class="section-content">
-        <div>Ontdek de glans van het verleden!</div>
-        <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
-        <p class="hero-intro">
-          Verlies jezelf opnieuw in de wereld van Kanto met 'Pokémon Scarlet &
-          Violet 151'. Beleef je favoriete Pokémon op een nieuwe en spannende
-          manier. Ga het avontuur aan, en verzamel ze allemaal!
-        </p>
-        <div class="actions">
-          <a
-            href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
-            target="_blank"
-            class="button-link primary"
-            @click="trekkie"
-            >Pre-order bij Bol.com!</a
-          >
-          <a href="#one" class="button-link secondary">Ontdek paketten</a>
-        </div>
+  <ColorBox class="la hero" color="#542760">
+    <div class="section-content">
+      <!-- <div>Ontdek de glans van het verleden!</div> -->
+      <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
+      <p class="hero-intro">
+        Verlies jezelf opnieuw in de wereld van Kanto met 'Pokémon Scarlet &
+        Violet 151'. Beleef je favoriete Pokémon op een nieuwe en spannende
+        manier. Ga het avontuur aan, en verzamel ze allemaal!
+      </p>
+      <div class="actions">
+        <a
+          href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
+          target="_blank"
+          class="button-link primary"
+          @click="trackClick"
+          >Pre-order bij Bol.com!</a
+        >
+        <a href="/producten" class="button-link secondary">Ontdek producten</a>
       </div>
-      <div class="card-container">
-        <div class="card" ref="tiltElement"></div>
-      </div>
-    </section>
-
-    <section class="la" id="one">
-      <ColorBox color="#F38696" />
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </section>
-
-    <section class="la">
-      <ColorBox color="#79C7D7" />
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </section>
-
-    <section class="la">
-      <ColorBox color="#E7DB71" />
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </section>
-
-    <section class="la">
-      <ColorBox color="#71E7A0" />
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </section>
-  </main>
+    </div>
+    <div class="card-container">
+      <div class="card" ref="tiltElement"></div>
+    </div>
+  </ColorBox>
 </template>
 
 <script setup>
 import va from "@vercel/analytics";
 import VanillaTilt from "vanilla-tilt";
 
-const currentColor = useCurrentColor();
-
-watch(currentColor, (newColor) => {
-  document.querySelector("body").style.backgroundColor = newColor;
-  console.log(newColor);
+definePageMeta({
+  layout: "default",
 });
 
 useSeoMeta({
@@ -78,7 +45,7 @@ useSeoMeta({
 
 const tiltElement = ref(null);
 
-function trekkie() {
+function trackClick() {
   va.track("bol");
 }
 
@@ -94,30 +61,24 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: center;
-  margin-block: var(--space-s-l);
-}
-.main {
-  max-width: 65rem;
-  margin-inline: auto;
-}
-
-.section {
-  padding-inline: var(--space-l-xl);
+.la {
   color: var(--font-base-color);
 }
 
-.section.hero {
+@media only screen and (max-width: 768px) {
+  .la {
+    padding-inline: var(--space-l-xl);
+  }
+}
+
+.la.hero {
   display: flex;
   gap: 2rem;
-  height: calc(80vh - env(safe-area-inset-bottom));
-  height: 80dvh;
+  margin-block-start: var(--space-xl-2xl);
 }
 
 @media only screen and (max-width: 768px) {
-  .section.hero {
+  .la.hero {
     flex-direction: column;
   }
 }
@@ -167,12 +128,14 @@ onMounted(() => {
 
 .card-container {
   flex: 1;
+  display: grid;
+  justify-items: center;
 }
 
 .card {
   /* position: relative; */
   will-change: transform;
-  width: 100%;
+  width: 80%;
   aspect-ratio: 4 / 5;
   border-radius: 1.5rem;
   background-color: #fff;
@@ -205,35 +168,4 @@ onMounted(() => {
   -webkit-transition: .3s;
   transition: .3s;
 } */
-
-section.la {
-  height: calc(100vh - env(safe-area-inset-bottom));
-  height: 100dvh;
-  padding-block: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 200px;
-  gap: 1rem;
-  grid-template-areas:
-    "block block"
-    "sub1 sub2";
-}
-
-.sub {
-  background-color: #fff;
-  border-radius: 2rem;
-  padding: 3rem;
-}
-
-.sub.one {
-  grid-area: sub1;
-}
-
-.sub.two {
-  grid-area: sub2;
-}
-
-.spacer {
-  height: 100vh;
-}
 </style>

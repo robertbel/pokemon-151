@@ -1,5 +1,7 @@
 <template>
-  <div class="color-box" ref="colorBoxRef"></div>
+  <section class="color-box" ref="colorBoxRef">
+    <slot></slot>
+  </section>
 </template>
 
 <script setup>
@@ -20,10 +22,6 @@ watch(isVisible, (newVal) => {
   if (newVal) {
     currentColor.value = props.color;
   }
-  console.log(isVisible);
-  // } else {
-  //   currentColor.value = "var(--color-alpha)";
-  // }
 });
 </script>
 
