@@ -3,7 +3,7 @@
     <h1>Producten</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor
-      voluptates quas.
+      voluptates quas. Adipisicing elit. Distinctio dolor voluptates quas.
     </p>
   </div>
   <ColorBox
@@ -109,7 +109,8 @@ const products = [
       },
     ],
     backgroundColor: "#542760",
-    textColor: "#FFFFFF",
+    backgroundColorBlock: "#865992",
+    textColorInverted: true,
   },
   {
     productTitle: "Booster bundle",
@@ -128,7 +129,28 @@ const products = [
       },
     ],
     backgroundColor: "#F38696",
-    textColor: "#542760",
+    backgroundColorBlock: "#FBCBDE",
+    textColorInverted: false,
+  },
+  {
+    productTitle: "Elite trainer box",
+    productIntro:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+    productImage: "product_elite-trainer-box",
+    productImageAlt: "Pokémon Scarlet & Violet 151 - Elite trainer box",
+    productPrices: [
+      {
+        store: "bol.com",
+        price: 13.55,
+      },
+      {
+        store: "interoys.nl",
+        price: 9.99,
+      },
+    ],
+    backgroundColor: "#79C7D7",
+    backgroundColorBlock: "#ABE2ED",
+    textColorInverted: false,
   },
 ];
 
@@ -159,35 +181,35 @@ function trackClick() {
 
 <style scoped>
 .intro {
-  text-align: center;
   color: white;
   padding-inline: var(--space-l-xl);
-}
-.la {
-  color: var(--font-base-color);
+  margin-block-start: var(--space-xl-2xl);
 }
 
 @media only screen and (max-width: 768px) {
-  .la {
-    padding-inline: var(--space-l-xl);
+  .intro {
+    margin-block-end: 2rem;
   }
 }
+
+.intro p {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  margin-block-start: var(--space-xs-s);
+}
+
 section.la {
   min-height: calc(80vh - env(safe-area-inset-bottom));
   min-height: 80dvh;
   padding-block: 2rem;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 200px;
-  gap: 1rem;
-  grid-template-areas:
-    "block block"
-    "sub1 sub2"; */
+  padding-inline: var(--space-l-xl);
 }
 
-/* section.la.hero {
-  height: auto;
-} */
+@media only screen and (max-width: 768px) {
+  section.la {
+    min-height: auto;
+  }
+}
 
 .sub {
   background-color: #fff;

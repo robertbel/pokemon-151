@@ -65,16 +65,11 @@ onMounted(() => {
   color: var(--font-base-color);
 }
 
-@media only screen and (max-width: 768px) {
-  .la {
-    padding-inline: var(--space-l-xl);
-  }
-}
-
 .la.hero {
   display: flex;
   gap: 2rem;
   margin-block-start: var(--space-xl-2xl);
+  padding-inline: var(--space-l-xl);
 }
 
 @media only screen and (max-width: 768px) {
@@ -93,6 +88,11 @@ onMounted(() => {
 .hero-title,
 .hero-intro {
   text-wrap: balance;
+}
+
+.hero-intro {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
 }
 
 .actions {

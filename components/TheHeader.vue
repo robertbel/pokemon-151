@@ -14,7 +14,6 @@
 a.router-link-active {
   font-weight: 700;
 }
-/* exact link will show the primary color for only the exact matching link */
 .header {
   max-width: 65rem;
   display: flex;
@@ -23,6 +22,7 @@ a.router-link-active {
 
   margin-block: var(--space-s-l);
   margin-inline: auto;
+  padding-inline: var(--space-l-xl);
 }
 
 @media only screen and (max-width: 768px) {

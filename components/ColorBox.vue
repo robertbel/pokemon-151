@@ -1,5 +1,5 @@
 <template>
-  <section class="color-box">
+  <section class="color-box" :class="{ inverted: data.textColorInverted }">
     <div class="product">
       <div class="product-summary">
         <h2>{{ data.productTitle }}</h2>
@@ -14,16 +14,33 @@
         </div>
       </div>
       <div class="product-info">
-        <div class="product-block">
-          <img
-            src="@/assets/images/product_booster-pack.webp"
-            alt="Pokémon Scarlet & Violet 151 - Booster Pack"
-          />
+        <div
+          class="product-block packs"
+          :style="[
+            isVisible
+              ? { backgroundColor: data.backgroundColorBlock }
+              : { backgroundColor: none },
+          ]"
+        >
+          <div class="statistic">16x</div>
+          <div class="statistic-image">
+            <img
+              src="@/assets/images/product_booster-pack.webp"
+              alt="Pokémon Scarlet & Violet 151 - Booster Pack"
+            />
+          </div>
         </div>
-        <div class="product-block">
+        <div
+          class="product-block"
+          :style="[
+            isVisible
+              ? { backgroundColor: data.backgroundColorBlock }
+              : { backgroundColor: none },
+          ]"
+        >
           <div class="product-price" v-for="price in data.productPrices">
             <div class="store">{{ price.store }}</div>
-            <div class="price">{{ price.price }}</div>
+            <div class="price">&euro; {{ price.price }}</div>
           </div>
         </div>
       </div>
@@ -62,7 +79,12 @@ watch(isVisible, (newVal) => {
   position: relative;
   border-radius: 2rem;
   display: grid;
-  place-items: center;
+  align-items: center;
+  color: var(--color-alpha);
+}
+
+.color-box.inverted {
+  color: #fff;
 }
 
 .color-box-ref {
@@ -75,7 +97,7 @@ watch(isVisible, (newVal) => {
 
 .product {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -88,6 +110,10 @@ watch(isVisible, (newVal) => {
   flex: 1;
 }
 
+.product-summary p {
+  margin-top: var(--space-xs-s);
+}
+
 .product-info {
   flex-grow: 0;
   flex-shrink: 1;
@@ -97,10 +123,38 @@ watch(isVisible, (newVal) => {
   gap: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .product-info {
+    flex-basis: auto;
+  }
+}
+
 .product-block {
-  background-color: #824e8f;
+  position: relative;
   border-radius: 1.5rem;
   padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.product-block.packs {
+  display: flex;
+  min-height: 10rem;
+}
+
+.product-block.packs .statistic {
+  flex: 1;
+}
+
+.product-block.packs .statistic-image {
+  width: 5rem;
+  position: relative;
+}
+
+.product-block.packs .statistic-image img {
+  position: absolute;
+  right: 1rem;
+  top: -1.5rem;
+  transform: rotate(10deg);
 }
 
 .product-image {
@@ -110,5 +164,15 @@ watch(isVisible, (newVal) => {
 .product-price {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0.5rem;
+  border-block-end: 1px dashed;
+}
+
+.product-price:last-child {
+  border-block-end: none;
+}
+
+.price {
+  font-weight: 800;
 }
 </style>
