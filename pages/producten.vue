@@ -1,9 +1,67 @@
 <template>
-  <ColorBox class="la hero" color="#542760"> Jooo </ColorBox>
+  <div class="intro">
+    <h1>Producten</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor
+      voluptates quas.
+    </p>
+  </div>
+  <ColorBox
+    class="la"
+    v-for="product in products"
+    :color="product.backgroundColor"
+    :data="product"
+  ></ColorBox>
+  <!-- <ColorBox class="la" color="#542760">
+    <div class="product">
+      <div class="product-summary">
+        <h2>Ultra Premium Collection Box</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          dolor voluptates quas.
+        </p>
+        <div class="product-image">
+          <img
+            src="@/assets/images/product_ultra-premium-collection.webp"
+            alt="Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box"
+          />
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-block">
+          <img
+            src="@/assets/images/product_booster-pack.webp"
+            alt="Pokémon Scarlet & Violet 151 - Booster Pack"
+          />
+        </div>
+        <div class="product-block">2</div>
+      </div>
+    </div>
+  </ColorBox>
   <ColorBox class="la" color="#F38696">
-    <div id="one">
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
+    <div class="product">
+      <div class="product-summary">
+        <h2>Booster bundle</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          dolor voluptates quas.
+        </p>
+        <div class="product-image">
+          <img
+            src="@/assets/images/product_booster-bundle.webp"
+            alt="Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box"
+          />
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-block">
+          <img
+            src="@/assets/images/product_booster-pack.webp"
+            alt="Pokémon Scarlet & Violet 151 - Booster Pack"
+          />
+        </div>
+        <div class="product-block">2</div>
+      </div>
     </div>
   </ColorBox>
 
@@ -26,12 +84,53 @@
       <div class="sub one">sub</div>
       <div class="sub two">sub</div>
     </div>
-  </ColorBox>
+  </ColorBox> -->
 </template>
 
 <script setup>
 import va from "@vercel/analytics";
-import VanillaTilt from "vanilla-tilt";
+
+const products = [
+  {
+    productTitle: "Ultra Premium Collection Box",
+    productIntro:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+    productImage: "product_ultra-premium-collection",
+    productImageAlt:
+      "Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box",
+    productPrices: [
+      {
+        store: "bol.com",
+        price: 13.55,
+      },
+      {
+        store: "interoys.nl",
+        price: 9.99,
+      },
+    ],
+    backgroundColor: "#542760",
+    textColor: "#FFFFFF",
+  },
+  {
+    productTitle: "Booster bundle",
+    productIntro:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+    productImage: "product_booster-bundle",
+    productImageAlt: "Pokémon Scarlet & Violet 151 - Booster bundle",
+    productPrices: [
+      {
+        store: "bol.com",
+        price: 13.55,
+      },
+      {
+        store: "interoys.nl",
+        price: 9.99,
+      },
+    ],
+    backgroundColor: "#F38696",
+    textColor: "#542760",
+  },
+];
 
 const currentColor = useCurrentColor();
 
@@ -53,24 +152,17 @@ useSeoMeta({
   ogImage: "@/assets/images/og-image.png",
 });
 
-const tiltElement = ref(null);
-
 function trackClick() {
   va.track("bol");
 }
-
-onMounted(() => {
-  VanillaTilt.init(tiltElement.value, {
-    startX: 20,
-    startY: 40,
-    max: 25,
-    speed: 400,
-    glare: true,
-  });
-});
 </script>
 
 <style scoped>
+.intro {
+  text-align: center;
+  color: white;
+  padding-inline: var(--space-l-xl);
+}
 .la {
   color: var(--font-base-color);
 }
@@ -81,17 +173,21 @@ onMounted(() => {
   }
 }
 section.la {
-  height: calc(100vh - env(safe-area-inset-bottom));
-  height: 100dvh;
+  min-height: calc(80vh - env(safe-area-inset-bottom));
+  min-height: 80dvh;
   padding-block: 2rem;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px 200px;
   gap: 1rem;
   grid-template-areas:
     "block block"
-    "sub1 sub2";
+    "sub1 sub2"; */
 }
+
+/* section.la.hero {
+  height: auto;
+} */
 
 .sub {
   background-color: #fff;

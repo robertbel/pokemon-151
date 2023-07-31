@@ -1,5 +1,5 @@
 <template>
-  <ColorBox class="la hero" color="#542760">
+  <div class="la hero">
     <div class="section-content">
       <!-- <div>Ontdek de glans van het verleden!</div> -->
       <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
@@ -22,7 +22,7 @@
     <div class="card-container">
       <div class="card" ref="tiltElement"></div>
     </div>
-  </ColorBox>
+  </div>
 </template>
 
 <script setup>
