@@ -1,38 +1,37 @@
 <template>
-  <header class="header">
-    <img src="@/assets/images/logo.webp" alt="Pokémon Scarlet & Violet 151" />
-  </header>
-  <main class="main">
-    <section class="section hero">
-      <div class="section-content">
-        <div>Ontdek de glans van het verleden!</div>
-        <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
-        <p class="hero-intro">
-          Verlies jezelf opnieuw in de wereld van Kanto met 'Pokémon Scarlet &
-          Violet 151'. Beleef je favoriete Pokémon op een nieuwe en spannende
-          manier. Ga het avontuur aan, en verzamel ze allemaal!
-        </p>
-        <div class="actions">
-          <a
-            href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
-            target="_blank"
-            class="button-link primary"
-            @click="storeClick"
-            >Pre-order bij Bol.com!</a
-          >
-          <!-- <a href="#" class="button-link secondary">Ontdek paketten</a> -->
-        </div>
+  <div class="la hero">
+    <div class="section-content">
+      <!-- <div>Ontdek de glans van het verleden!</div> -->
+      <h1 class="hero-title">Pokémon Scarlet & Violet 151</h1>
+      <p class="hero-intro">
+        Verlies jezelf opnieuw in de wereld van Kanto met 'Pokémon Scarlet &
+        Violet 151'. Beleef je favoriete Pokémon op een nieuwe en spannende
+        manier. Ga het avontuur aan, en verzamel ze allemaal!
+      </p>
+      <div class="actions">
+        <a
+          href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
+          target="_blank"
+          class="button-link primary"
+          @click="trackClick"
+          >Pre-order bij Bol.com!</a
+        >
+        <a href="/producten" class="button-link secondary">Ontdek producten</a>
       </div>
-      <div class="card-container">
-        <div class="card" ref="tiltElement"></div>
-      </div>
-    </section>
-  </main>
+    </div>
+    <div class="card-container">
+      <div class="card" ref="tiltElement"></div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import va from "@vercel/analytics";
 import VanillaTilt from "vanilla-tilt";
+
+definePageMeta({
+  layout: "default",
+});
 
 useSeoMeta({
   title: "Pokémon Scarlet & Violet 151",
@@ -46,7 +45,7 @@ useSeoMeta({
 
 const tiltElement = ref(null);
 
-function storeClick() {
+function trackClick() {
   va.track("Bol.com main c2a");
 }
 
@@ -62,41 +61,38 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: center;
-  margin-block: 2rem;
-}
-.main {
-  max-width: 65rem;
-  margin-inline: auto;
-}
-
-.section {
-  padding-inline: var(--space-l-xl);
+.la {
   color: var(--font-base-color);
 }
 
-.section.hero {
+.la.hero {
   display: flex;
   gap: 2rem;
+  margin-block-start: var(--space-xl-2xl);
+  padding-inline: var(--space-l-xl);
 }
 
 @media only screen and (max-width: 768px) {
-  .section.hero {
+  .la.hero {
     flex-direction: column;
   }
 }
 
 .section-content {
   flex: 1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-s-m);
 }
 
 .hero-title,
 .hero-intro {
   text-wrap: balance;
+}
+
+.hero-intro {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
 }
 
 .actions {
@@ -106,41 +102,19 @@ onMounted(() => {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.button-link {
-  text-decoration: none;
-  padding-inline: var(--space-s);
-  padding-block: var(--space-s);
-  display: grid;
-  place-items: center;
-  border-radius: 2rem;
-  font-weight: 700;
-}
-
-.button-link.primary {
-  background-color: #e7c771;
-  color: #542760;
-}
-
-.button-link.primary:hover {
-  background-color: #f9da87;
-}
-
-.button-link.secondary {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
 .card-container {
   flex: 1;
+  display: grid;
+  justify-items: center;
 }
 
 .card {
   /* position: relative; */
   will-change: transform;
-  width: 100%;
+  width: 80%;
   aspect-ratio: 4 / 5;
-  border-radius: 1.5rem;
-  background-color: red;
+  border-radius: 1rem;
+  background-color: #fff;
   background-image: url("@/assets/images/card_mew.webp");
   background-size: cover;
 }

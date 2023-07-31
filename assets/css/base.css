@@ -1,13 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-alpha);
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-base);
   overflow-x: hidden;
+  transition: background-color 0.3s ease;
+  transition-delay: 0.2s;
 }
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -22,4 +28,28 @@ body::before {
     #000 0%,
     transparent 100%
   );
+}
+
+.button-link {
+  text-decoration: none;
+  padding-inline: var(--space-m);
+  padding-block: var(--space-s);
+  display: inline-grid;
+  place-items: center;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.button-link.primary {
+  background-color: #e7c771;
+  color: #542760;
+}
+
+.button-link.primary:hover {
+  background-color: #f9da87;
+}
+
+.button-link.secondary {
+  border: 2px solid #fff;
+  color: #fff;
 }
