@@ -26,6 +26,13 @@ h2 {
   text-wrap: balance;
 }
 
+h3 {
+  font-size: var(--font-size-base);
+  line-height: 1;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
 p {
   font-size: var(--font-size-base);
   line-height: 1.5;

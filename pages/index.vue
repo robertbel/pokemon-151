@@ -102,30 +102,6 @@ onMounted(() => {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.button-link {
-  text-decoration: none;
-  padding-inline: var(--space-s);
-  padding-block: var(--space-s);
-  display: grid;
-  place-items: center;
-  border-radius: 2rem;
-  font-weight: 700;
-}
-
-.button-link.primary {
-  background-color: #e7c771;
-  color: #542760;
-}
-
-.button-link.primary:hover {
-  background-color: #f9da87;
-}
-
-.button-link.secondary {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
 .card-container {
   flex: 1;
   display: grid;
@@ -137,7 +113,7 @@ onMounted(() => {
   will-change: transform;
   width: 80%;
   aspect-ratio: 4 / 5;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background-color: #fff;
   background-image: url("@/assets/images/card_mew.webp");
   background-size: cover;

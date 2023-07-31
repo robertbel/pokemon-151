@@ -2,10 +2,20 @@
   <section class="color-box" :class="{ inverted: data.textColorInverted }">
     <div class="product">
       <div class="product-summary">
-        <h2>{{ data.productTitle }}</h2>
-        <p>
-          {{ data.productIntro }}
-        </p>
+        <div class="product-text">
+          <h2>{{ data.productTitle }}</h2>
+          <p>
+            {{ data.productIntro }}
+          </p>
+          <div class="product-actions">
+            <a
+              href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
+              target="_blank"
+              class="button-link primary"
+              >Pre-order bij Bol.com!</a
+            >
+          </div>
+        </div>
         <div class="product-image">
           <img
             :src="`/images/${data.productImage}.webp`"
@@ -22,7 +32,10 @@
               : { backgroundColor: none },
           ]"
         >
-          <div class="statistic">16x</div>
+          <div class="statistic">
+            <div class="statistic-number">{{ data.numberOfPacks }}x</div>
+            <div class="statistic-label">Booster pack</div>
+          </div>
           <div class="statistic-image">
             <img
               src="@/assets/images/product_booster-pack.webp"
@@ -38,6 +51,7 @@
               : { backgroundColor: none },
           ]"
         >
+          <h3>Meer betrouwbare aanbieders</h3>
           <div class="product-price" v-for="price in data.productPrices">
             <div class="store">{{ price.store }}</div>
             <div class="price">&euro; {{ price.price }}</div>
@@ -90,9 +104,16 @@ watch(isVisible, (newVal) => {
 .color-box-ref {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 20%;
   width: 100%;
   height: 1px;
+  /* border: 1px solid red; */
+}
+
+@media only screen and (max-width: 768px) {
+  .color-box-ref {
+    top: 50%;
+  }
 }
 
 .product {
@@ -108,19 +129,35 @@ watch(isVisible, (newVal) => {
 
 .product-summary {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2rem;
+  padding-inline-end: 4rem;
 }
 
-.product-summary p {
-  margin-top: var(--space-xs-s);
+@media only screen and (max-width: 768px) {
+  .product-summary {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.product-text p {
+  margin-block: var(--space-xs-s);
+}
+
+.product-image img {
+  max-width: 60%;
 }
 
 .product-info {
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 26.5rem;
+  flex-basis: 22.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-m-l);
 }
 
 @media only screen and (max-width: 768px) {
@@ -136,6 +173,10 @@ watch(isVisible, (newVal) => {
   transition: background-color 0.3s;
 }
 
+.product-block h3 {
+  padding: 0.5rem;
+}
+
 .product-block.packs {
   display: flex;
   min-height: 10rem;
@@ -143,22 +184,28 @@ watch(isVisible, (newVal) => {
 
 .product-block.packs .statistic {
   flex: 1;
+  padding-inline: 1rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .product-block.packs .statistic-image {
-  width: 5rem;
+  width: 6rem;
   position: relative;
 }
 
 .product-block.packs .statistic-image img {
   position: absolute;
-  right: 1rem;
+  right: 2rem;
   top: -1.5rem;
   transform: rotate(10deg);
 }
 
-.product-image {
-  margin-block-start: var(--space-m-l);
+.product-block.packs .statistic-number {
+  font-size: 4.25rem;
+  line-height: 1;
 }
 
 .product-price {
@@ -166,10 +213,16 @@ watch(isVisible, (newVal) => {
   justify-content: space-between;
   padding: 1rem 0.5rem;
   border-block-end: 1px dashed;
+  transition: background-color 0.2s linear;
 }
 
 .product-price:last-child {
   border-block-end: none;
+}
+
+.product-price:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  cursor: pointer;
 }
 
 .price {

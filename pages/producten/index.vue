@@ -2,8 +2,8 @@
   <div class="intro">
     <h1>Producten</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor
-      voluptates quas. Adipisicing elit. Distinctio dolor voluptates quas.
+      Hier vindt je all producten beschikbaar van de nostalgische Pokémon
+      Scarlet & Violet 151 set, vergeleken in prijs en beschikbaarheid.
     </p>
   </div>
   <ColorBox
@@ -12,79 +12,6 @@
     :color="product.backgroundColor"
     :data="product"
   ></ColorBox>
-  <!-- <ColorBox class="la" color="#542760">
-    <div class="product">
-      <div class="product-summary">
-        <h2>Ultra Premium Collection Box</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          dolor voluptates quas.
-        </p>
-        <div class="product-image">
-          <img
-            src="@/assets/images/product_ultra-premium-collection.webp"
-            alt="Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box"
-          />
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-block">
-          <img
-            src="@/assets/images/product_booster-pack.webp"
-            alt="Pokémon Scarlet & Violet 151 - Booster Pack"
-          />
-        </div>
-        <div class="product-block">2</div>
-      </div>
-    </div>
-  </ColorBox>
-  <ColorBox class="la" color="#F38696">
-    <div class="product">
-      <div class="product-summary">
-        <h2>Booster bundle</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          dolor voluptates quas.
-        </p>
-        <div class="product-image">
-          <img
-            src="@/assets/images/product_booster-bundle.webp"
-            alt="Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box"
-          />
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-block">
-          <img
-            src="@/assets/images/product_booster-pack.webp"
-            alt="Pokémon Scarlet & Violet 151 - Booster Pack"
-          />
-        </div>
-        <div class="product-block">2</div>
-      </div>
-    </div>
-  </ColorBox>
-
-  <ColorBox class="la" color="#79C7D7">
-    <div>
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </div>
-  </ColorBox>
-
-  <ColorBox class="la" color="#E7DB71">
-    <div>
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </div>
-  </ColorBox>
-
-  <ColorBox class="la" color="#71E7A0">
-    <div>
-      <div class="sub one">sub</div>
-      <div class="sub two">sub</div>
-    </div>
-  </ColorBox> -->
 </template>
 
 <script setup>
@@ -108,6 +35,7 @@ const products = [
         price: 9.99,
       },
     ],
+    numberOfPacks: 16,
     backgroundColor: "#542760",
     backgroundColorBlock: "#865992",
     textColorInverted: true,
@@ -128,6 +56,7 @@ const products = [
         price: 9.99,
       },
     ],
+    numberOfPacks: 6,
     backgroundColor: "#F38696",
     backgroundColorBlock: "#FBCBDE",
     textColorInverted: false,
@@ -148,6 +77,7 @@ const products = [
         price: 9.99,
       },
     ],
+    numberOfPacks: 9,
     backgroundColor: "#79C7D7",
     backgroundColorBlock: "#ABE2ED",
     textColorInverted: false,
@@ -184,6 +114,7 @@ function trackClick() {
   color: white;
   padding-inline: var(--space-l-xl);
   margin-block-start: var(--space-xl-2xl);
+  margin-block-end: 6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -199,8 +130,8 @@ function trackClick() {
 }
 
 section.la {
-  min-height: calc(80vh - env(safe-area-inset-bottom));
-  min-height: 80dvh;
+  min-height: calc(90vh - env(safe-area-inset-bottom));
+  min-height: 90dvh;
   padding-block: 2rem;
   padding-inline: var(--space-l-xl);
 }
