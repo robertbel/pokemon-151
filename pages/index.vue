@@ -46,7 +46,7 @@ useSeoMeta({
 const tiltElement = ref(null);
 
 function trackClick() {
-  va.track("bol");
+  va.track("Bol.com main c2a");
 }
 
 onMounted(() => {
