@@ -21,18 +21,37 @@ const products = [
   {
     productTitle: "Ultra Premium Collection Box",
     productIntro:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+      "Voeg de mythische Pokémon Mew toe aan je Pokédex! Geniet van unieke Scarlet & Violet-151 boosterpacks, een verzamelbare Mew EX metalen kaart en veel meer.",
     productImage: "product_ultra-premium-collection",
     productImageAlt:
       "Pokémon Scarlet & Violet 151 - Ultra Premium Collection Box",
+    primaryUrl:
+      "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-ultra-premium-collection-pokemon-kaarten/9300000153604924/",
     productPrices: [
       {
-        store: "bol.com",
-        price: 13.55,
+        store: "Dracoon",
+        url: "https://dracoon.nl/product/pokemon-scarlet-violet-151-ultra-premium-collection/",
+        price: 128.99,
       },
       {
-        store: "interoys.nl",
-        price: 9.99,
+        store: "Bescards",
+        url: "https://www.bescards.nl/pokemon-151-ultra-premium-collection/",
+        price: 139.99,
+      },
+      {
+        store: "Game Mania",
+        url: "https://www.gamemania.nl/nl/board-games/trading-card-games/153205_scarlet-violet-151-ultra-premium-collection-pokemon-tcg",
+        price: 149.98,
+      },
+      {
+        store: "Bol.com",
+        url: "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-ultra-premium-collection-pokemon-kaarten/9300000153604924/",
+        price: 149.99,
+      },
+      {
+        store: "Intertoys",
+        url: "https://www.intertoys.nl/pokemon-tcg-scarlet-en-violet-151-ultra-premium-collection",
+        price: 149.99,
       },
     ],
     numberOfPacks: 16,
@@ -43,17 +62,36 @@ const products = [
   {
     productTitle: "Booster bundle",
     productIntro:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+      "Ga mee op avontuur met Bulbasaur, Charmander en Squirtle! Vang alle 151 Pokémon met de Scarlet & Violet-151 Booster Bundle, inclusief unieke Venusaur EX, Charizard EX en Blastoise EX kaarten.",
     productImage: "product_booster-bundle",
     productImageAlt: "Pokémon Scarlet & Violet 151 - Booster bundle",
+    primaryUrl:
+      "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-6-booster-bundle-pokemon-kaarten/9300000152330531/",
     productPrices: [
       {
-        store: "bol.com",
-        price: 13.55,
+        store: "Dracoon",
+        url: "https://dracoon.nl/product/pokemon-scarlet-violet-151-booster-bundel/",
+        price: 27.95,
       },
       {
-        store: "interoys.nl",
-        price: 9.99,
+        store: "Bescards",
+        url: "https://www.bescards.nl/pokemon-151-6pk-booster-bundle/",
+        price: 29.99,
+      },
+      {
+        store: "Bol.com",
+        url: "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-6-booster-bundle-pokemon-kaarten/9300000152330531/",
+        price: 34.99,
+      },
+      {
+        store: "Intertoys",
+        url: "https://www.intertoys.nl/pokemon-tcg-scarlet-en-violet-151-booster-bundel",
+        price: 34.99,
+      },
+      {
+        store: "Game Mania",
+        url: "https://www.gamemania.nl/nl/board-games/trading-card-games/153200_scarlet-violet-151-6-booster-bundle-pokemon-tcg",
+        price: 36.98,
       },
     ],
     numberOfPacks: 6,
@@ -64,17 +102,36 @@ const products = [
   {
     productTitle: "Elite trainer box",
     productIntro:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor voluptates quas.",
+      "Ga op een episch avontuur in de Kanto-regio met de unieke Elite Trainer Box! Maak je Pokédex compleet en bewijs dat je elke uitdaging aankan.",
     productImage: "product_elite-trainer-box",
     productImageAlt: "Pokémon Scarlet & Violet 151 - Elite trainer box",
+    primaryUrl:
+      "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-elite-trainer-box-pokemon-kaarten/9300000153604928/",
     productPrices: [
       {
-        store: "bol.com",
-        price: 13.55,
+        store: "Dracoon",
+        url: "https://dracoon.nl/product/pokemon-scarlet-violet-151-elite-trainer-box/",
+        price: 44.95,
       },
       {
-        store: "interoys.nl",
-        price: 9.99,
+        store: "Bescards",
+        url: "https://www.bescards.nl/pokemon-151-elite-trainer-box/",
+        price: 44.99,
+      },
+      {
+        store: "Bol.com",
+        url: "https://www.bol.com/nl/nl/p/pokemon-scarlet-violet-151-elite-trainer-box-pokemon-kaarten/9300000153604928/",
+        price: 55.99,
+      },
+      {
+        store: "Intertoys",
+        url: "https://www.intertoys.nl/pokemon-tcg-scarlet-en-violet-151-elite-trainer-box",
+        price: 55.99,
+      },
+      {
+        store: "Game Mania",
+        url: "https://www.gamemania.nl/nl/board-games/trading-card-games/153201_scarlet-violet-151-elite-trainer-box-pokemon-tcg",
+        price: 59.98,
       },
     ],
     numberOfPacks: 9,
@@ -95,12 +152,12 @@ definePageMeta({
 });
 
 useSeoMeta({
-  title: "Pokémon Scarlet & Violet 151",
-  ogTitle: "Pokémon Scarlet & Violet 151",
+  title: "Pokémon Scarlet & Violet 151 - Producten",
+  ogTitle: "Pokémon Scarlet & Violet 151 - Producten",
   description:
-    "Verlies jezelf opnieuw in de wereld van Kanto met Pokémon Scarlet & Violet 151.",
+    "Hier vindt je all producten beschikbaar van de nostalgische Pokémon Scarlet & Violet 151 set, vergeleken in prijs en beschikbaarheid.",
   ogDescription:
-    "Verlies jezelf opnieuw in de wereld van Kanto met Pokémon Scarlet & Violet 151.",
+    "Hier vindt je all producten beschikbaar van de nostalgische Pokémon Scarlet & Violet 151 set, vergeleken in prijs en beschikbaarheid.",
   ogImage: "@/assets/images/og-image.png",
 });
 
@@ -114,7 +171,6 @@ function trackClick() {
   color: white;
   padding-inline: var(--space-l-xl);
   margin-block-start: var(--space-xl-2xl);
-  margin-block-end: 6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -130,16 +186,8 @@ function trackClick() {
 }
 
 section.la {
-  min-height: calc(90vh - env(safe-area-inset-bottom));
-  min-height: 90dvh;
-  padding-block: 2rem;
+  padding-block: var(--space-2xl-3xl);
   padding-inline: var(--space-l-xl);
-}
-
-@media only screen and (max-width: 768px) {
-  section.la {
-    min-height: auto;
-  }
 }
 
 .sub {

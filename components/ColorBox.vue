@@ -9,7 +9,7 @@
           </p>
           <div class="product-actions">
             <a
-              href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+151"
+              :href="data.primaryUrl"
               target="_blank"
               class="button-link primary"
               >Pre-order bij Bol.com!</a
@@ -52,10 +52,15 @@
           ]"
         >
           <h3>Meer betrouwbare aanbieders</h3>
-          <div class="product-price" v-for="price in data.productPrices">
+          <a
+            class="product-price"
+            v-for="price in data.productPrices"
+            :href="price.url"
+            target="_blank"
+          >
             <div class="store">{{ price.store }}</div>
             <div class="price">&euro; {{ price.price }}</div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -104,7 +109,7 @@ watch(isVisible, (newVal) => {
 .color-box-ref {
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 50%;
   width: 100%;
   height: 1px;
   /* border: 1px solid red; */
@@ -213,6 +218,8 @@ watch(isVisible, (newVal) => {
   justify-content: space-between;
   padding: 1rem 0.5rem;
   border-block-end: 1px dashed;
+  text-decoration: none;
+  color: inherit;
   transition: background-color 0.2s linear;
 }
 
