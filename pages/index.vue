@@ -69,7 +69,6 @@ onMounted(() => {
   display: flex;
   gap: 2rem;
   margin-block-start: var(--space-xl-2xl);
-  padding-inline: var(--space-l-xl);
 }
 
 @media only screen and (max-width: 768px) {
