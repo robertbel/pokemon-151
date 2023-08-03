@@ -40,6 +40,13 @@ export default defineEventHandler(async () => {
       titleSelector: ".product-meta__title",
       priceSelector: ".product-form__info-content .price",
     },
+    {
+      product: "Binder",
+      website: "Cees Cards",
+      url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-binder-collection",
+      titleSelector: ".product-meta__title",
+      priceSelector: ".product-form__info-content .price",
+    },
   ];
 
   const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
