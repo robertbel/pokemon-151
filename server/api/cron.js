@@ -1,5 +1,5 @@
-import axios from "axios";
 import { load } from "cheerio";
+import { $fetch } from "ofetch";
 // import fs from "fs/promises";
 
 export default defineEventHandler(async () => {
@@ -53,8 +53,8 @@ export default defineEventHandler(async () => {
 
   const getProductData = async (url, titleSelector, priceSelector) => {
     try {
-      const response = await axios.get(url);
-      const html = response.data;
+      const response = await $fetch(url);
+      const html = response;
       const $ = load(html);
       const title = $(titleSelector).text();
       const price = $(priceSelector).text();
