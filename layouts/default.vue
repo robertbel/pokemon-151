@@ -9,5 +9,6 @@
 .main {
   max-width: 65rem;
   margin-inline: auto;
+  padding-inline: var(--space-l-xl);
 }
 </style>

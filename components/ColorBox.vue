@@ -29,7 +29,7 @@
           :style="[
             isVisible
               ? { backgroundColor: data.backgroundColorBlock }
-              : { backgroundColor: none },
+              : { backgroundColor: 'transparent' },
           ]"
         >
           <div class="statistic">
@@ -48,7 +48,7 @@
           :style="[
             isVisible
               ? { backgroundColor: data.backgroundColorBlock }
-              : { backgroundColor: none },
+              : { backgroundColor: 'transparent' },
           ]"
         >
           <h3>Meer betrouwbare aanbieders</h3>

@@ -16,6 +16,8 @@
     "@vercel/analytics": "^1.0.1",
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
-    "vanilla-tilt": "^1.8.0"
+    "sass": "^1.64.2",
+    "vanilla-tilt": "^1.8.0",
+    "vue3-easy-data-table": "^1.5.47"
   }
 }

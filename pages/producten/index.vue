@@ -169,7 +169,6 @@ function trackClick() {
 <style scoped>
 .intro {
   color: white;
-  padding-inline: var(--space-l-xl);
   margin-block-start: var(--space-xl-2xl);
 }
 
@@ -187,7 +186,6 @@ function trackClick() {
 
 section.la {
   padding-block: var(--space-2xl-3xl);
-  padding-inline: var(--space-l-xl);
 }
 
 .sub {
