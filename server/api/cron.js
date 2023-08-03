@@ -2,48 +2,48 @@ import axios from "axios";
 import { load } from "cheerio";
 import fs from "fs/promises";
 
-const products = [
-  {
-    product: "Elite Trainer Box",
-    website: "Bescards",
-    url: "https://www.bescards.nl/pokemon-151-elite-trainer-box",
-    titleSelector: ".product_title",
-    priceSelector:
-      ".vc_custom_1661771770534 .price ins .woocommerce-Price-amount",
-  },
-  {
-    product: "Elite Trainer Box",
-    website: "PokemonWinkel.nl",
-    url: "https://www.pokemonwinkel.nl/collections/pokemon-151/products/pokemon-151-elite-trainer-box",
-    titleSelector: "h1 .product-detail__title",
-    priceSelector: ".product-price span:first-child span",
-  },
-  {
-    product: "Ultra Premium Collection",
-    website: "Cees Cards",
-    url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-ultra-premium-collection",
-    titleSelector: ".product-meta__title",
-    priceSelector: ".product-form__info-content .price",
-  },
-  {
-    product: "Booster Bundle",
-    website: "Cees Cards",
-    url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-booster-bundle",
-    titleSelector: ".product-meta__title",
-    priceSelector: ".product-form__info-content .price",
-  },
-  {
-    product: "Elite Trainer Box",
-    website: "Cees Cards",
-    url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-elite-trainer-box",
-    titleSelector: ".product-meta__title",
-    priceSelector: ".product-form__info-content .price",
-  },
-];
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 export default defineEventHandler(async () => {
+  const products = [
+    {
+      product: "Elite Trainer Box",
+      website: "Bescards",
+      url: "https://www.bescards.nl/pokemon-151-elite-trainer-box",
+      titleSelector: ".product_title",
+      priceSelector:
+        ".vc_custom_1661771770534 .price ins .woocommerce-Price-amount",
+    },
+    {
+      product: "Elite Trainer Box",
+      website: "PokemonWinkel.nl",
+      url: "https://www.pokemonwinkel.nl/collections/pokemon-151/products/pokemon-151-elite-trainer-box",
+      titleSelector: "h1 .product-detail__title",
+      priceSelector: ".product-price span:first-child span",
+    },
+    {
+      product: "Ultra Premium Collection",
+      website: "Cees Cards",
+      url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-ultra-premium-collection",
+      titleSelector: ".product-meta__title",
+      priceSelector: ".product-form__info-content .price",
+    },
+    {
+      product: "Booster Bundle",
+      website: "Cees Cards",
+      url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-booster-bundle",
+      titleSelector: ".product-meta__title",
+      priceSelector: ".product-form__info-content .price",
+    },
+    {
+      product: "Elite Trainer Box",
+      website: "Cees Cards",
+      url: "https://ceescards.eu/products/pokemon-scarlet-violet-151-elite-trainer-box",
+      titleSelector: ".product-meta__title",
+      priceSelector: ".product-form__info-content .price",
+    },
+  ];
+
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
   const getProductData = async (url, titleSelector, priceSelector) => {
     try {
       const response = await axios.get(url);
