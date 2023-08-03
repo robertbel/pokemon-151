@@ -1,6 +1,6 @@
 import axios from "axios";
 import { load } from "cheerio";
-import fs from "fs/promises";
+// import fs from "fs/promises";
 
 export default defineEventHandler(async () => {
   const products = [
@@ -72,7 +72,8 @@ export default defineEventHandler(async () => {
     await delay(5000);
   }
 
-  await fs.writeFile("public/data/data.json", JSON.stringify(products), "utf8");
+  // await fs.writeFile("public/data/data.json", JSON.stringify(products), "utf8");
+  console.log(products);
 
   function extractAmount(str) {
     // Find the position of the first digit or the Euro symbol
