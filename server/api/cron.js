@@ -76,7 +76,7 @@ export default defineEventHandler(async () => {
     Object.assign(product, { title: tit.cleanTitle, price: tit.cleanPrice });
 
     // wait 5000ms before next iteration
-    await delay(5000);
+    await delay(1000);
   }
 
   // await fs.writeFile("public/data/data.json", JSON.stringify(products), "utf8");
