@@ -1,5 +1,5 @@
-import { getItems } from "../data/items";
+// import { getItems } from "../data/items";
 
-export default defineEventHandler(async () => {
-  return await getItems();
-});
+// export default defineEventHandler(async () => {
+//   return await getItems();
+// });
