@@ -1,7 +1,7 @@
-import prisma from "./prisma";
+// import prisma from "./prisma";
 
 export async function getItems() {
-  console.log(prisma);
+  console.log("fewfewfewfwe");
   // Find the latest pull date
   // const latestPull = await prisma.products.findFirst({
   //   orderBy: {
