@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model product_categories {
+  id              Int        @id @default(autoincrement())
+  product_name    String?    @db.VarChar(255)
+  number_of_packs Int?       @db.SmallInt
+  set_id          Int?
+  sets            sets?      @relation(fields: [set_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  products        products[]
+}
+
+model products {
+  id                 Int                 @id(map: "new_products_pkey") @default(autoincrement())
+  product_cat_id     Int?
+  webshop_id         Int?
+  url                String?             @db.VarChar(255)
+  pulled_date        DateTime?           @db.Timestamp(6)
+  current_price      Decimal?            @db.Decimal
+  product_categories product_categories? @relation(fields: [product_cat_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "new_products_product_cat_id_fkey")
+  webshops           webshops?           @relation(fields: [webshop_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "new_products_webshop_id_fkey")
+}
+
+model webshops {
+  id           Int        @id @default(autoincrement())
+  webshop_name String?    @db.VarChar(255)
+  webshop_url  String?    @db.VarChar(255)
+  products     products[]
+}
+
+model sets {
+  id                 Int                  @id @default(autoincrement())
+  set_name           String               @db.VarChar(255)
+  product_categories product_categories[]
+}
